@@ -10,7 +10,7 @@ dev (default) |[![Build Status](https://travis-ci.org/hpi-swt2/sport-portal.svg?
 master  |[![Build Status](https://travis-ci.org/hpi-swt2/sport-portal.svg?branch=master)](https://travis-ci.org/hpi-swt2/sport-portal/branches) | [![Coverage Status](https://coveralls.io/repos/github/hpi-swt2/sport-portal/badge.svg?branch=master)](https://coveralls.io/github/hpi-swt2/sport-portal?branch=master) |   | [![Heroku](https://heroku-badge.herokuapp.com/?app=sport-portal)](http://sport-portal.herokuapp.com/) [[link]](http://sport-portal.herokuapp.com/) | [[link]](https://swt2-errbit-2017.herokuapp.com/apps/5a030ed1d901a0000620325e) |
 
 
-When all tests succeed on Travis CI, the application is deployed to Heroku. Click the badges for detailed info. <br>
+When all tests succeed on Travis CI, the application is deployed to Heroku, the databases are set up and seeds are created. Click the badges for detailed info. <br>
 Errors that occur while using the deployed master branch on Heroku are logged to the [Errbit](http://swt2-errbit-2017.herokuapp.com/) error catcher, you can sign in with your Github account.
 
 ## Setup
@@ -28,6 +28,7 @@ You can setup the project either locally, i.e. directly on your system, or using
 * `rake db:create db:migrate db:seed` Setup database, run migrations, seed the database with defaults
 * `rspec` Run all the tests (using the [RSpec](http://rspec.info/) test framework)
 * `rails s` Start the Rails development server (runs on `localhost:3000` by default)
+* Check out `db/seeds.rb` to see which models were created (including user passwords)
 
 ### Using Vagrant (Virtual Machine)
 
